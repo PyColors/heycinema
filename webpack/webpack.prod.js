@@ -1,23 +1,17 @@
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {
+    CleanWebpackPlugin
+} = require('clean-webpack-plugin');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-const {
-    prod_Path,
-    src_Path
-} = require('./path');
-const {
-    selectedPreprocessor
-} = require('./loader');
-
 module.exports = {
     entry: {
-        main: './' + src_Path + '/index.js'
+        main: './' + 'src' + '/index.js'
     },
     output: {
-        path: path.resolve(__dirname, prod_Path),
+        path: path.resolve(__dirname, '../dist'),
         filename: '[name].[chunkhash].js'
     },
     module: {
@@ -29,7 +23,7 @@ module.exports = {
             }
         },
             {
-                test: selectedPreprocessor.fileRegexp,
+                test: /\.(sass|scss|css)$/,
                 use: [{
                     loader: MiniCssExtractPlugin.loader
                 },
@@ -46,7 +40,7 @@ module.exports = {
                         },
                     },
                     {
-                        loader: selectedPreprocessor.loaderName
+                        loader: 'sass-loader',
                     }
                 ]
             },
@@ -72,7 +66,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './' + src_Path + '/index.html',
+            template: './' + 'src' + '/index.html',
             filename: 'index.html'
         }),
 

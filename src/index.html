@@ -9,8 +9,14 @@
 </head>
 
 <body>
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
 <h1 class="center">Hello!</h1>
 <h2 class="center">Webpack 4 is running!</h2>
+
 <script defer src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 
