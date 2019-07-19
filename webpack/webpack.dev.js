@@ -15,7 +15,15 @@ module.exports = {
         open: true,
     },
     module: {
-        rules: [{
+        rules: [
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
+                }
+            },
+            {
             test: /\.(sass|scss|css)$/,
             use: [{
                 loader: MiniCssExtractPlugin.loader
@@ -56,7 +64,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: false,
             hash: false,
-            template: './' + 'src' + '/index.html',
+            template: 'public' + '/index.html',
             filename: 'index.html'
         })
     ]
