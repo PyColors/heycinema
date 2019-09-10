@@ -1,17 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from '../src/package/templates/App';
+import { Provider } from 'react-redux';
+import store from './store';
 
-import{ hello } from './hello';
-import config from './config';
-
-
-console.log(hello(config.name));
-
-import './styles/style.scss';
+import './styles/index.scss';
 
 ReactDOM.render(
-<h1>Hello, world!</h1>,
-document.getElementById('root')
+    <Provider store={store}>
+      <App />
+    </Provider>,
+  document.getElementById('root')
 );
-
-

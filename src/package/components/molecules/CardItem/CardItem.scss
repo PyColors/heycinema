@@ -1,0 +1,88 @@
+.card {
+  padding: 0;
+  border-radius: $radius-button;
+  animation: animationFrames ease 1s;
+
+  &__article {
+    height: 197px;
+  }
+
+  &__picture {
+    height: 197px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      top: 0;
+      right: -34px;
+      content: "";
+      height: 0px;
+      width: 82px;
+      border-bottom: 197px solid $white;
+      border-left: 40px solid transparent;
+      border-right: 40px solid transparent;
+
+      @media only screen and (max-width: 768px) {
+        content: inherit;
+        border-bottom: inherit;
+      }
+    }
+
+      img {
+      display: block;
+      height: 197px;
+      width: 61%;
+      border-top-left-radius: $radius-button;
+      border-bottom-left-radius: $radius-button;
+
+      @media only screen and (max-width: 768px) {
+        width: inherit;
+        margin: 15px auto 0;
+        border-radius: $radius-button;
+      }
+    }
+  }
+
+  &__information {
+    position: relative;
+    z-index: 10;
+    margin: 0 0 0 15px;
+    text-align: left;
+
+    @media only screen and (max-width: 768px) {
+      margin: 0;
+      text-align: center;
+    }
+
+    &__heading {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      color: $primary-color;
+    }
+
+    &__subtitle {
+      margin: 0 0 8px;
+      color: $tertiary-color;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    &__callout {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      color: $secondary-color;
+    }
+  }
+
+}
+
+@keyframes animationFrames {
+  0% {
+    opacity:0;
+    transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px);
+  }
+}

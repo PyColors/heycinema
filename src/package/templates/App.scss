@@ -1,0 +1,34 @@
+.content {
+
+  &__appbar {
+    width: 980px;
+    margin: 0px auto;
+    border-bottom-right-radius: $radius-button;
+    border-bottom-left-radius: $radius-button;
+
+    @media (max-width: 991.98px) {
+      width: inherit;
+    }
+  }
+
+  &__title {
+    padding: 6px 0 0;
+  }
+
+  &__title-1 {
+    @extend .common-title;
+    color: $primary-color;
+  }
+
+  &__title-2 {
+    @extend .common-title;
+    color: $secondary-color;
+    font-family: Helvetica, sans-serif;
+    line-height: .50;
+  }
+}
+
+.common-title {
+  display: block;
+  font-weight: bold;
+}
