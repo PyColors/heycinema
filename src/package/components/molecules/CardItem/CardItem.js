@@ -20,7 +20,7 @@ const CardItem = ({ movie }) => (
           : null
       }
     </Col>
-    
+
     <Col xs="12" md="6">
     <div className='card__information'>
       <div>
