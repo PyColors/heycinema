@@ -25,13 +25,11 @@ module.exports = (options) => ({
         }
       },
       {
-        // Preprocess our own .scss files
         test: /\.scss$/,
         exclude: /node_modules/,
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
-        // Preprocess 3rd party .css files located in node_modules
         test: /\.css$/,
         include: /node_modules/,
         use: ['style-loader', 'css-loader']
@@ -65,9 +63,7 @@ module.exports = (options) => ({
       fetch: 'exports-loader?self.fetch!whatwg-fetch'
     }),
 
-    // Always expose NODE_ENV to webpack, in order to use `process.env.NODE_ENV`
-    // inside your code for any environment checks; UglifyJS will automatically
-    // drop any unreachable code.
+    // Expose NODE_ENV to webpack as always,
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify(process.env.NODE_ENV)
