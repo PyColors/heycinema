@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = require('./webpack.base.babel')({
   mode: 'production',
-  // In production, we skip all hot-reloading stuff
+  // Skip all hot-reloading stuff, in production
   entry: [
     path.join(process.cwd(), 'app/app.js')
   ],
