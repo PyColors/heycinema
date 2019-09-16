@@ -1,0 +1,35 @@
+  
+.main-search {
+  text-align: center;
+
+  &__search {
+    position: relative;
+    margin: 100px 0 75px;
+    padding: 15px 40px 15px 20px;
+    width: 0;
+    color: #525252;
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #FFFFFF 0%,#464747 #F9F9F9 100%);
+    transition: width 0.4s ease;
+    outline: none;
+
+    &:focus { 
+      width: 300px; 
+
+      @media only screen and (max-width: 768px) {
+        width: 75%;
+        padding: 15px 20px 15px 20px;
+      }
+    }
+  }
+
+  .search-icon {
+    position: relative;
+    left: -37px;
+    color: #8233C5;
+  }
+}

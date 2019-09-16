@@ -1,0 +1,19 @@
+/*
+This file is used to contain all @font-face.
+*/
+
+@font-face {
+    font-family: 'helvetica_bold';
+    src: url('../fonts/boldext/helveticaneue-boldext.woff2') format('woff2'),
+          url('../fonts/boldext/helveticaneue-boldext.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'helvetica_light';
+  src: url('../fonts/lightext/helveticaneue-lightext.woff2') format('woff2'),
+        url('../fonts/lightext/helveticaneue-lightext.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} 
