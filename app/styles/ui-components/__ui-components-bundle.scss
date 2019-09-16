@@ -1,0 +1,16 @@
+/*
+This file is used to contain all component imports.
+*/
+
+// Import Component files
+@import '../../package/templates/App/App.scss';
+@import '../../package/pages/HomePage/HomePage.scss';
+@import '../../package/pages/NotFoundPage/NotFound.scss';
+@import '../../package/components/organisms/MovieListItem/MovieListItem.scss';
+@import '../../package/components/molecules/Card/Card.scss';
+@import '../../package/components/molecules/CardItem/CardItem.scss';
+// @import '../../package/components/organisms/SearchContainer/SearchContainer.scss';
+// @import '../../package/components/molecules/CardItem/CardItem.scss';
+// @import '../../package/components/molecules/SearchInputForm/SearchInputForm.scss';
+@import '../../package/components/molecules/Loading/Loading.scss';
+
