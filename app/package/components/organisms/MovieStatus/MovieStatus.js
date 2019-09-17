@@ -7,7 +7,6 @@ import Loading from '../../molecules/Loading';
 import MovieListItem from '../MovieListItem';
 
 const MovieStatus = ({ loading, error, movies }) => {
-
   if (loading) {
     return <Card component={Loading} />;
   }

@@ -27,7 +27,7 @@ export function* getMovies() {
 /**
  * Root saga manages watcher lifecycle
  */
-export default function* githubData() {
+export default function* omdDData() {
   // Watches for LOAD_MOVIES actions and calls getMovies when one comes in.
   // By using `takeLatest` only the result of the latest API call is applied.
   // It returns task descriptor (just like fork) so we can continue execution

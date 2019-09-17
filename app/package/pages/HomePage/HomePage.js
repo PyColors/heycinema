@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import MovieStatus from '../../components/organisms/MovieStatus';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   // When initial state title is not null, submit the form to load movies
@@ -32,27 +31,22 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
           <meta name="description" content="Homepage" />
         </Helmet>
         <div className="home-page">
-     
           <section>
-      
-            <form className='main-search' onSubmit={onSubmitForm}>
-              <div className='flex'>
+            <form className="main-search" onSubmit={onSubmitForm}>
+              <div className="flex">
                 <label htmlFor="title">
-               
                   <input
-                    id='title'
-                    type='text'
-                    placeholder='Search movie title...'
+                    id="title"
+                    type="text"
+                    placeholder="Search movie title..."
                     value={title}
                     onChange={onChangeTitle}
-                    className='main-search__search'
+                    className="main-search__search"
                   />
-
-                  <FontAwesomeIcon 
-                    icon={faSearch} 
-                    className='search-icon'
+                  <FontAwesomeIcon
+                    icon={faSearch}
+                    className="search-icon"
                   />
-
                 </label>
               </div>
             </form>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Loading = () => (
-  <section className='loading'>   
+  <section className="loading">
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
       <defs>
         <filter id="gooey">
@@ -18,6 +18,6 @@ const Loading = () => (
     <div className="blob blob-4"></div>
     <div className="blob blob-5"></div>
   </section>
-)
+);
 
 export default Loading;

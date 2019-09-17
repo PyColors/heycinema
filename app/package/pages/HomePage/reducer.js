@@ -8,8 +8,7 @@ const initialState = {
 function homeReducer(state = initialState, action) {
   switch (action.type) {
     case CHANGE_TITLE:
-      // Delete prefixed '@' from the github title
-      return { ...state, title: action.name.replace(/@/gi, '') };
+      return { ...state, title: action.name };
     default:
       return state;
   }

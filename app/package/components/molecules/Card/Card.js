@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Card = ({ component, items }) => {
-
   const ComponentToRender = component;
   let content = (<div></div>);
 
@@ -23,7 +22,7 @@ const Card = ({ component, items }) => {
 
 Card.propTypes = {
   component: PropTypes.elementType.isRequired,
-  // items: PropTypes.object,
+  items: PropTypes.object,
 };
 
 export default Card;
