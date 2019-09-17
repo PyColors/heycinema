@@ -116,7 +116,6 @@
     "babel-core": "7.0.0-bridge.0"
   },
   "engines": {
-    "node": "10.15.3",
-    "npm": ">=5"
+    "node": "10.x"
   }
 }
