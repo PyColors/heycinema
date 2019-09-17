@@ -1,21 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Switch, Route } from 'react-router-dom';
+import Header from '../../components/organisms/Header';
 import HomePage from '../../pages/HomePage/Loadable';
 import NotFoundPage from '../../pages/NotFoundPage/Loadable';
+import Footer from '../../components/organisms/Footer';
 
 const App = () => (
   <main className="content">
-    <header className="mui-appbar mui--z1 content__appbar">
-      <div className="mui-container">
-        <div className="mui--appbar-height">
-          <div className="mui--text-title content__title">
-            <span className="content__title-1">hey</span>
-            <span className="content__title-2">cinema</span>
-          </div>
-        </div>
-      </div>
-    </header>
+    <Header />
     <Helmet
       titleTemplate="%s - Movies"
       defaultTitle="Movies"
@@ -26,11 +19,7 @@ const App = () => (
       <Route exact path="/" component={HomePage} />
       <Route path="" component={NotFoundPage} />
     </Switch>
-    <footer>
-      <div className="mui-container mui--text-center">
-      Made with ♥
-      </div>
-    </footer>
+    <Footer />
   </main>
 );
 
