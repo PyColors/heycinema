@@ -17,7 +17,7 @@ import App from './package/templates/App';
 
 // Load the favicon
 /* eslint-disable import/no-webpack-loader-syntax */
-// import '!file-loader?name=[name].[ext]!./images/favicon.ico';
+import '!file-loader?name=[name].[ext]!../public/images/favicon.ico';
 /* eslint-enable import/no-webpack-loader-syntax */
 
 // Import CSS
