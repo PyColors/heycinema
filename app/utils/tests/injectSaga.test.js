@@ -39,7 +39,7 @@ describe('injectSaga decorator', () => {
     shallow(<ComponentWithSaga {...props} />, { context: { store } });
 
     expect(injectors.injectSaga).toHaveBeenCalledTimes(1);
-    expect(injectors.injectSaga).toHaveBeenCalledWith('test', { saga: testSaga, mode: 'testMode' }, props);
+    expect(injectors.injectSaga).toHaveBeenCalledWith('my-test', { saga: testSaga, mode: 'testMode' }, props);
   });
 
   it('should eject on unmount with a correct saga key', () => {
@@ -48,7 +48,7 @@ describe('injectSaga decorator', () => {
     renderedComponent.unmount();
 
     expect(injectors.ejectSaga).toHaveBeenCalledTimes(1);
-    expect(injectors.ejectSaga).toHaveBeenCalledWith('test');
+    expect(injectors.ejectSaga).toHaveBeenCalledWith('my-test');
   });
 
   it('should set a correct display name', () => {
