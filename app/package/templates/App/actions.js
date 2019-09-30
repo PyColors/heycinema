@@ -38,7 +38,7 @@ export function moviesLoaded(movies, title) {
  *
  * @return {object}       An action object with a type of LOAD_MOVIES_ERROR passing the error
  */
-export function repoLoadingError(error) {
+export function moviesLoadingError(error) {
   return {
     type: LOAD_MOVIES_ERROR,
     error,

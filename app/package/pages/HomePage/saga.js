@@ -4,7 +4,7 @@ import {
 } from 'redux-saga/effects';
 
 import { LOAD_MOVIES } from '../../templates/App/constants';
-import { moviesLoaded, repoLoadingError } from '../../templates/App/actions';
+import { moviesLoaded, moviesLoadingError } from '../../templates/App/actions';
 
 import request from '../../../utils/request';
 import { makeSelectTitle } from './selectors';
@@ -20,7 +20,7 @@ export function* getMovies() {
     const movies = yield call(request, requestURL);
     yield put(moviesLoaded(movies, title));
   } catch (err) {
-    yield put(repoLoadingError(err));
+    yield put(moviesLoadingError(err));
   }
 }
 
