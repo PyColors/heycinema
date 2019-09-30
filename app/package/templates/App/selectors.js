@@ -17,7 +17,7 @@ const makeSelectError = () => createSelector(
 
 const makeSelectMovies = () => createSelector(
   selectGlobal,
-  (globalState) => globalState.userData.movies
+  (globalState) => globalState.cinemaData.movies
 );
 
 const makeSelectLocation = () => createSelector(

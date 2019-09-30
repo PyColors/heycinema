@@ -5,7 +5,7 @@ export const initialState = {
   loading: false,
   error: false,
   currentUser: false,
-  userData: {
+  cinemaData: {
     movies: false,
   },
 };
@@ -17,7 +17,7 @@ function appReducer(state = initialState, action) {
         ...state,
         loading: true,
         error: false,
-        userData: {
+        cinemaData: {
           movies: false,
         },
       };
@@ -28,7 +28,7 @@ function appReducer(state = initialState, action) {
       const newState = {
         ...state,
         loading: false,
-        userData: {
+        cinemaData: {
           movies: action.movies,
         },
         currentUser: action.title,
