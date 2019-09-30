@@ -4,7 +4,6 @@ import { LOAD_MOVIES_SUCCESS, LOAD_MOVIES, LOAD_MOVIES_ERROR } from './constants
 export const initialState = {
   loading: false,
   error: false,
-  currentUser: false,
   cinemaData: {
     movies: false,
   },
@@ -30,8 +29,7 @@ function appReducer(state = initialState, action) {
         loading: false,
         cinemaData: {
           movies: action.movies,
-        },
-        currentUser: action.title,
+        }
       };
       return newState;
     }
