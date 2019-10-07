@@ -1,0 +1,14 @@
+.about-page {
+  max-width: 740px;
+  margin: 100px auto 75px;
+  color: #333;
+  border-radius: $general-radius;
+
+  &__title {
+    color: #23a6d5;
+  }
+
+  &__subtitle {
+    color: #e73c7e;
+  }
+}
