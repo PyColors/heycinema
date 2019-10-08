@@ -1,6 +1,10 @@
 # heycinema [![Build Status](https://travis-ci.org/PyColors/heycinema.svg?branch=master)](https://travis-ci.org/PyColors/heycinema)
 
+![N|Solid](http://www.pycolors.com/v2/git/heycinema/heycinema-pycolors-screenshot)
+
 🎞️ heycinema isa search app from the OMDb API RESTful web service to obtain movie pieces of information, with All Best Practices.
+
+### [Demo online](http://www.pycolors.com/v2/git/heycinema/)
 
 In the project directory, you can run:
 
