@@ -3,6 +3,7 @@
   margin: 100px auto 75px;
   color: #333;
   border-radius: $general-radius;
+  animation: animationFrames ease 1s;
 
   &__title {
     color: #23a6d5;
@@ -10,5 +11,16 @@
 
   &__subtitle {
     color: #e73c7e;
+  }
+}
+
+@keyframes animationFrames {
+  0% {
+    opacity:0;
+    transform:  translate(0px,-25px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px);
   }
 }
