@@ -26,6 +26,20 @@
     font-family: Helvetica, sans-serif;
     line-height: .50;
   }
+
+  &__right {
+    position: relative;
+    top: -24px;
+  }
+
+  &__link  {
+    color: $secondary-color;
+    font-weight: bold;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
 }
 
 .common-title {
