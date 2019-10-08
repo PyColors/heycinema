@@ -1,4 +1,6 @@
-## heycinema
+# heycinema [![Build Status](https://travis-ci.org/PyColors/heycinema.svg?branch=master)](https://travis-ci.org/PyColors/heycinema)
+
+🎞️ heycinema isa search app from the OMDb API RESTful web service to obtain movie pieces of information, with All Best Practices.
 
 In the project directory, you can run:
 
