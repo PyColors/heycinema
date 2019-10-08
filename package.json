@@ -1,7 +1,7 @@
 {
   "name": "heycinema",
   "version": "1.0.0",
-  "description": "",
+  "description": "🎞️ heycinema - is a search app from the OMDb API RESTful web service to obtain movie pieces of information.",
   "repository": {
     "type": "git"
   },
