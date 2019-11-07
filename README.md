@@ -4,9 +4,11 @@
 
 🎞️ heycinema isa search app from the OMDb API RESTful web service to obtain movie pieces of information, with All Best Practices.
 
+### [Demo online](http://heycinema.surge.sh)
+
 ### Tech
 
-heycinema uses a number of open source projects to work properly:
+heycinema uses a number of open source projects to work properly and has been deployed on [surge]:
 
 * [React] - A JavaScript library for building user interfaces
 * [React Loadable] - A higher order component for loading components with promises
@@ -80,6 +82,7 @@ The build is minified and the filenames include the hashes. Ready to be deployed
    [dill]: <https://github.com/PyColors/heycinema>
    [git-repo-url]: <https://github.com/PyColors/heycinema>
    [React]: <https://github.com/facebook/react>
+   [surge]: <https://github.com/sintaxi/surge>
    [React Loadable]: <https://github.com/jamiebuilds/react-loadable>
    [Redux]: <https://github.com/reduxjs/redux>
    [redux-saga]: <https://github.com/redux-saga/redux-saga>
