@@ -37,7 +37,7 @@
     "history": "4.9.0",
     "hoist-non-react-statics": "3.3.0",
     "invariant": "2.2.4",
-    "ip": "1.1.5",
+    "ip": "1.1.9",
     "lodash": ">=4.17.21",
     "minimist": "1.2.6",
     "muicss": "^0.9.43",
