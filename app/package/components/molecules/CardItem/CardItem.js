@@ -1,14 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CardItem = ({ item }) => (
-  <div className="card-item-wrapper">
-    <li className="card-item-wrapper__card-item">{item}</li>
-  </div>
-);
+const CardItem = ({ item }) => {
+  if (!item) {
+    return null;
+  }
+
+  return (
+    <ul className="card-item-wrapper">
+      <li className="card-item-wrapper__card-item">{item}</li>
+    </ul>
+  );
+};
 
 CardItem.propTypes = {
-  item: PropTypes.any
+  item: PropTypes.string.isRequired,
 };
 
 export default CardItem;
