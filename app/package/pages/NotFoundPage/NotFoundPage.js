@@ -6,7 +6,7 @@ export default function NotFound() {
     <article className="not-found">
       <h1>Page not found.</h1>
       <p>Sorry, the page you were trying to view does not exist.</p>
-      <Link to="/">Return to Home Page</Link>
+      Return to Home Page
     </article>
   );
 }
